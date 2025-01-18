@@ -83,9 +83,7 @@ int main()
             }
             else if (tecla == 'D') // Branco (todas as cores ligadas)
             {
-                gpio_put(LED_RED, 1);
-                gpio_put(LED_GREEN, 1);
-                gpio_put(LED_BLUE, 1);
+                
             }
         }
 
