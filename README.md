@@ -43,5 +43,6 @@ Este projeto utiliza um **Raspberry Pi Pico W** para controlar um **LED RGB** e 
 ## Contribuidores
 
 - **César Rebouças Costa** [github.com/cesarrcosta99]
+- **Douglas Benevides Almeida** [github.com/almdoug]
 
 

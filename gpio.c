@@ -83,11 +83,13 @@ int main()
             }
             else if (tecla == 'D') // Branco (todas as cores ligadas)
             {
-                
+                gpio_put(LED_RED, 1);
+                gpio_put(LED_GREEN, 1);
+                gpio_put(LED_BLUE, 1);
             }
         }
 
-        sleep_ms(200); // Intervalo de tempo para leitura
+        sleep_ms(50); // Intervalo de tempo para leitura
     }
 
     return 0;
@@ -118,7 +120,7 @@ char leitura_teclado()
                 // Aguarda a tecla ser liberada (debounce)
                 while (gpio_get(linhas[linha]) == 0)
                 {
-                    sleep_ms(10); // Aguarda a tecla ser liberada
+                    sleep_ms(5); // Reduzido de 10ms para 5ms
                 }
                 break; // Sai do laço após detectar a tecla
             }
