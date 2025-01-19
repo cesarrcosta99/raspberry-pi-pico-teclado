@@ -36,10 +36,11 @@ pico_sdk_init()
 # Add executable. Default name is the project name, version 0.1
 add_executable(gpio
     gpio.c
+    buzzer.c
 )
 
 # Pull in common dependencies
-target_link_libraries(gpio pico_stdlib)
+target_link_libraries(gpio pico_stdlib hardware_pwm)
 
 if (PICO_CYW43_SUPPORTED)
     target_link_libraries(gpio pico_cyw43_arch_none)

@@ -1,6 +1,6 @@
 #include "pico/stdlib.h"
 #include <stdio.h>
-#include "buzzer.c" // Inclusão do arquivo buzzer.c
+#include "buzzer.h" // Inclusão do arquivo buzzer.c
 
 // Definição dos pinos para o LED RGB
 #define LED_RED 19
