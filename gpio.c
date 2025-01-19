@@ -1,5 +1,6 @@
 #include "pico/stdlib.h"
 #include <stdio.h>
+#include "buzzer.c" // Inclusão do arquivo buzzer.c
 
 // Definição dos pinos para o LED RGB
 #define LED_RED 19
@@ -24,6 +25,9 @@ int main()
 {
     // Inicializa a UART (Serial)
     stdio_init_all();
+
+     // Inicializa o buzzer
+    inicializar_buzzer();
 
     // Configuração dos pinos do LED RGB como saída
     gpio_init(LED_RED);
@@ -61,6 +65,12 @@ int main()
         if (tecla != 'n') // Só exibe se uma tecla foi pressionada
         {
             printf("Tecla pressionada: %c\n", tecla);
+
+            // Controle do buzzer ao pressionar '#'
+            if (tecla == '#')
+            {
+                emitir_som(); // Emite o som pelo buzzer
+            }
 
             // Controle das cores do LED RGB
             if (tecla == 'A') // Vermelho
