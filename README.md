@@ -1,4 +1,7 @@
-# Projeto de Controle de LED RGB com Teclado Matricial
+# Link do vídeo: 
+https://www.youtube.com/watch?v=-sMF_QgKUC0
+
+Projeto de Controle de LED RGB com Teclado Matricial
 
 Este projeto utiliza um **Raspberry Pi Pico W** para controlar um **LED RGB** e um **buzzer** a partir das teclas de um teclado matricial 4x4.
 
